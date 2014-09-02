@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta charsetr="etf-8">
+	 <title>Virtual Labs</title>
+	 <link rel="stylesheet" href="../css/bootstrap.css">
+	 <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	 <script src="../js/bootstrap.min.js"></script>
+	 <script src="../js/bootstrap-modal.js"></script>
+	 <script src="../js/bootstrap-modalmanager.js"></script>
+
+<!--	 <style type="text/css">
+	 .well { background: #fff; text-align: center; }
+	 .modal { text-align: left; }
+	 </style>  -->
+
+	</head>
+
+	<body>
+	
+	<div id="wrap">
+
+	 <div class="navbar navbar-fixed-top"> 
+	 	 <div class="navbar-inner">
+	 	  <div class="container">
+	 	  	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>	
+	 	   <a href="../index.html" class="brand"> Virtual Labs</a>
+	 	    <div class="nav-collapse collapse">
+	 	    	<ul class="nav">
+	 	    	 <li> <a href="index.html">Home</a> </li>
+			 	    	 <li class="dropdown">
+		                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Labs <b class="caret"></b></a>
+			                <ul class="dropdown-menu">
+				                  <li><a href="#">Computers</a></li>
+				                  <li><a href="#">Civil</a></li>
+				                  <li><a href="#">Electrical</a></li>
+				                  <li class="divider"></li>
+				                  <li class="nav-header">Computers</li>
+				                  <li><a href="#">Data Structures</a></li>
+				                  <li><a href="#">Algorithms</a></li>
+			                </ul>
+		                </li>
+	 	    	 		<li class="dropdown">
+		                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+			                <ul class="dropdown-menu">
+				                  <li><a href="#">History</a></li>
+				                  <li><a href="#">Achievements</a></li>
+				                  <li><a href="#">Constituent Team</a></li>
+				                  <li class="divider"></li>
+				                  <li class="nav-header">Important Members</li>
+				                  <li><a href="#">IIT-B</a></li>
+				                  <li><a href="#">IIIT-H</a></li>
+			                </ul>
+		                </li>
+				<li><a href="#form-content" role="button" data-toggle="modal">Contact</a></li>
+				<div id="form-content" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" keyboard:"true" backdrop:"true">
+				<div class="modal-header">
+				<a class="close" data-dismiss="modal">×</a>
+				<h3>Send me a message</h3>
+				</div>
+				<div class="modal-body">
+				<form class="contact" name="contact">
+				<label class="label" for="name">Your Name</label><br>
+				<input type="text" name="name" class="input-xlarge"><br>
+				<label class="label" for="email">Your E-mail</label><br>
+				<input type="email" name="email" class="input-xlarge"><br>
+				<label class="label" for="message">Enter a Message</label><br>
+				<textarea name="message" class="input-xlarge"></textarea>
+				</form>
+				</div>
+				<div class="modal-footer">
+				<input class="btn btn-success" type="submit" value="Send!" id="submit">
+				<a href="#" class="btn" data-dismiss="modal">Nah.</a>
+				</div>
+				</div>
+
+
+
+	 	    	</ul>
+                </form>
+	 	    </div>
+	 	  </div>
+	 	 </div>	
+	 </div>
+
+	 
+
+ <div class="container-fluid">
+ 	<div class="row-fluid">
+ 	<div class="span4">
+ 	<ul class="breadcrumb">
+	  <li><a href="#">Home</a> <span class="divider">/</span></li>
+	  <li><a href="#">Labs</a> <span class="divider">/</span></li>
+	  <li class="active">Data</li>
+    </ul>	</div> </div> </div>
+
+   	<div id="push">
+   	</div>
+
+   	<div class"container-fluid">
+   	   	<div class="tabbable tabs-left">
+	 			<ul class="nav nav-tabs">
+	                <li class="active"><a href="#lA" data-toggle="tab">Points and Coordinate Solutions</a></li>
+	                <li class=""><a href="#lB" data-toggle="tab">Transformations : Translation</a></li>
+	                <li class=""><a href="#lC" data-toggle="tab">Transformations : Scaling</a></li>
+	                <li class=""><a href="#lD" data-toggle="tab">Transformation : rotation</a></li>
+	                <li class=""><a href="#lE" data-toggle="tab">Clipping : line</a></li>
+	                <li class=""><a href="#lF" data-toggle="tab">Clipping : Polygon</a></li>
+	                <li class=""><a href="#lG" data-toggle="tab">Rasterization : line</a></li>
+	                <li class=""><a href="#lH" data-toggle="tab">Rasterization : polygon</a></li>
+	                <li class=""><a href="#lI" data-toggle="tab">Hierarchial Transformation : 2D Demo</a></li>
+	                <li class=""><a href="#lJ" data-toggle="tab">Hierarchial Transformation : 3D articulated arm</a></li>
+	                <li class=""><a href="#lK" data-toggle="tab">Projection and cameras</a></li>
+	            </ul>
+			<div class="tab-content">
+			    
+			    <div class="tab-pane active" id="lA">
+
+			    	<h4>Points and Coordinating Solutions</h4>
+			    	<div class="tabbable"> <!-- Only required for left/right tabs -->
+			    		<ul class="nav nav-tabs">
+			    			<li class="active"><a href="#tab1" data-toggle="tab">Introduction</a></li>
+			    			<li><a href="#tab2" data-toggle="tab">Theory</a></li>
+			    			<li><a href="#tab3" data-toggle="tab">Objective</a></li>
+			    			<li><a href="#tab4" data-toggle="tab">Perform</a></li>
+			    			<li><a href="#tab5" data-toggle="tab">Quiz</a></li>
+			    			<li><a href="#tab6" data-toggle="tab">Referrence</a></li>
+			    		</ul>
+			    		<div class="tab-content">
+			    			<div class="tab-pane active" id="tab1">
+			    				<p>In this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth witIn this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth with periodic motion..</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab2">
+			    				<p>Howdy, I'm in Section 2.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab3">
+			    				<p>Howdy, I'm in Section 3.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab4">
+			    				<p>Howdy, I'm in Section 4.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab5">
+			    				<p>Howdy, I'm in Section 5.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab6">
+			    				<p>Howdy, I'm in Section 6.</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>         
+			    <div class="tab-pane" id="lB">
+
+			    	<h4>Transformation : Translation</h4>
+			    	<div class="tabbable"> <!-- Only required for left/right tabs -->
+			    		<ul class="nav nav-tabs">
+			    			<li class="active"><a href="#tab1" data-toggle="tab">Introduction</a></li>
+			    			<li><a href="#tab2" data-toggle="tab">Theory</a></li>
+			    			<li><a href="#tab3" data-toggle="tab">Objective</a></li>
+			    			<li><a href="#tab4" data-toggle="tab">Perform</a></li>
+			    			<li><a href="#tab5" data-toggle="tab">Quiz</a></li>
+			    			<li><a href="#tab6" data-toggle="tab">Referrence</a></li>
+			    		</ul>
+			    		<div class="tab-content">
+			    			<div class="tab-pane active" id="tab1">
+			    				<p>In this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth witIn this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth with periodic motion..</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab2">
+			    				<p>Howdy, I'm in Section 2.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab3">
+			    				<p>Howdy, I'm in Section 3.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab4">
+			    				<p>Howdy, I'm in Section 4.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab5">
+			    				<p>Howdy, I'm in Section 5.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab6">
+			    				<p>Howdy, I'm in Section 6.</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>         
+			    <div class="tab-pane" id="lC">
+
+			    	<h4>Transformation : Scaling</h4>
+			    	<div class="tabbable"> <!-- Only required for left/right tabs -->
+			    		<ul class="nav nav-tabs">
+			    			<li class="active"><a href="#tab1" data-toggle="tab">Introduction</a></li>
+			    			<li><a href="#tab2" data-toggle="tab">Theory</a></li>
+			    			<li><a href="#tab3" data-toggle="tab">Objective</a></li>
+			    			<li><a href="#tab4" data-toggle="tab">Perform</a></li>
+			    			<li><a href="#tab5" data-toggle="tab">Quiz</a></li>
+			    			<li><a href="#tab6" data-toggle="tab">Referrence</a></li>
+			    		</ul>
+			    		<div class="tab-content">
+			    			<div class="tab-pane active" id="tab1">
+			    				<p>In this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth witIn this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth with periodic motion..</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab2">
+			    				<p>Howdy, I'm in Section 2.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab3">
+			    				<p>Howdy, I'm in Section 3.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab4">
+			    				<p>Howdy, I'm in Section 4.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab5">
+			    				<p>Howdy, I'm in Section 5.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab6">
+			    				<p>Howdy, I'm in Section 6.</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>         
+			    <div class="tab-pane" id="lD">
+
+			    	<h4>Tranformations : Roatation</h4>
+			    	<div class="tabbable"> <!-- Only required for left/right tabs -->
+			    		<ul class="nav nav-tabs">
+			    			<li class="active"><a href="#tab1" data-toggle="tab">Introduction</a></li>
+			    			<li><a href="#tab2" data-toggle="tab">Theory</a></li>
+			    			<li><a href="#tab3" data-toggle="tab">Objective</a></li>
+			    			<li><a href="#tab4" data-toggle="tab">Perform</a></li>
+			    			<li><a href="#tab5" data-toggle="tab">Quiz</a></li>
+			    			<li><a href="#tab6" data-toggle="tab">Referrence</a></li>
+			    		</ul>
+			    		<div class="tab-content">
+			    			<div class="tab-pane active" id="tab1">
+			    				<p>In this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth witIn this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth with periodic motion..</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab2">
+			    				<p>Howdy, I'm in Section 2.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab3">
+			    				<p>Howdy, I'm in Section 3.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab4">
+			    				<p>Howdy, I'm in Section 4.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab5">
+			    				<p>Howdy, I'm in Section 5.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab6">
+			    				<p>Howdy, I'm in Section 6.</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>         
+			    <div class="tab-pane" id="lE">
+
+			    	<h4>Clipping : Line</h4>
+			    	<div class="tabbable"> <!-- Only required for left/right tabs -->
+			    		<ul class="nav nav-tabs">
+			    			<li class="active"><a href="#tab1" data-toggle="tab">Introduction</a></li>
+			    			<li><a href="#tab2" data-toggle="tab">Theory</a></li>
+			    			<li><a href="#tab3" data-toggle="tab">Objective</a></li>
+			    			<li><a href="#tab4" data-toggle="tab">Perform</a></li>
+			    			<li><a href="#tab5" data-toggle="tab">Quiz</a></li>
+			    			<li><a href="#tab6" data-toggle="tab">Referrence</a></li>
+			    		</ul>
+			    		<div class="tab-content">
+			    			<div class="tab-pane active" id="tab1">
+			    				<p>In this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth witIn this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth with periodic motion..</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab2">
+			    				<p>Howdy, I'm in Section 2.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab3">
+			    				<p>Howdy, I'm in Section 3.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab4">
+			    				<p>Howdy, I'm in Section 4.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab5">
+			    				<p>Howdy, I'm in Section 5.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab6">
+			    				<p>Howdy, I'm in Section 6.</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>         
+			    <div class="tab-pane" id="lF">
+
+			    	<h4>Clipping : Polygon</h4>
+			    	<div class="tabbable"> <!-- Only required for left/right tabs -->
+			    		<ul class="nav nav-tabs">
+			    			<li class="active"><a href="#tab1" data-toggle="tab">Introduction</a></li>
+			    			<li><a href="#tab2" data-toggle="tab">Theory</a></li>
+			    			<li><a href="#tab3" data-toggle="tab">Objective</a></li>
+			    			<li><a href="#tab4" data-toggle="tab">Perform</a></li>
+			    			<li><a href="#tab5" data-toggle="tab">Quiz</a></li>
+			    			<li><a href="#tab6" data-toggle="tab">Referrence</a></li>
+			    		</ul>
+			    		<div class="tab-content">
+			    			<div class="tab-pane active" id="tab1">
+			    				<p>In this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth witIn this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth with periodic motion..</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab2">
+			    				<p>Howdy, I'm in Section 2.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab3">
+			    				<p>Howdy, I'm in Section 3.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab4">
+			    				<p>Howdy, I'm in Section 4.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab5">
+			    				<p>Howdy, I'm in Section 5.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab6">
+			    				<p>Howdy, I'm in Section 6.</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>         
+			    <div class="tab-pane" id="lG">
+
+			    	<h4>Rasterization : line</h4>
+			    	<div class="tabbable"> <!-- Only required for left/right tabs -->
+			    		<ul class="nav nav-tabs">
+			    			<li class="active"><a href="#tab1" data-toggle="tab">Introduction</a></li>
+			    			<li><a href="#tab2" data-toggle="tab">Theory</a></li>
+			    			<li><a href="#tab3" data-toggle="tab">Objective</a></li>
+			    			<li><a href="#tab4" data-toggle="tab">Perform</a></li>
+			    			<li><a href="#tab5" data-toggle="tab">Quiz</a></li>
+			    			<li><a href="#tab6" data-toggle="tab">Referrence</a></li>
+			    		</ul>
+			    		<div class="tab-content">
+			    			<div class="tab-pane active" id="tab1">
+			    				<p>In this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth witIn this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth with periodic motion..</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab2">
+			    				<p>Howdy, I'm in Section 2.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab3">
+			    				<p>Howdy, I'm in Section 3.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab4">
+			    				<p>Howdy, I'm in Section 4.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab5">
+			    				<p>Howdy, I'm in Section 5.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab6">
+			    				<p>Howdy, I'm in Section 6.</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>         
+			    <div class="tab-pane" id="lH">
+
+			    	<h4>Rasterization : Polygon</h4>
+			    	<div class="tabbable"> <!-- Only required for left/right tabs -->
+			    		<ul class="nav nav-tabs">
+			    			<li class="active"><a href="#tab1" data-toggle="tab">Introduction</a></li>
+			    			<li><a href="#tab2" data-toggle="tab">Theory</a></li>
+			    			<li><a href="#tab3" data-toggle="tab">Objective</a></li>
+			    			<li><a href="#tab4" data-toggle="tab">Perform</a></li>
+			    			<li><a href="#tab5" data-toggle="tab">Quiz</a></li>
+			    			<li><a href="#tab6" data-toggle="tab">Referrence</a></li>
+			    		</ul>
+			    		<div class="tab-content">
+			    			<div class="tab-pane active" id="tab1">
+			    				<p>In this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth witIn this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth with periodic motion..</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab2">
+			    				<p>Howdy, I'm in Section 2.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab3">
+			    				<p>Howdy, I'm in Section 3.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab4">
+			    				<p>Howdy, I'm in Section 4.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab5">
+			    				<p>Howdy, I'm in Section 5.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab6">
+			    				<p>Howdy, I'm in Section 6.</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>         
+			    <div class="tab-pane" id="lI">
+
+			    	<h4>Hierarchial Tranformations : 2D demo</h4>
+			    	<div class="tabbable"> <!-- Only required for left/right tabs -->
+			    		<ul class="nav nav-tabs">
+			    			<li class="active"><a href="#tab1" data-toggle="tab">Introduction</a></li>
+			    			<li><a href="#tab2" data-toggle="tab">Theory</a></li>
+			    			<li><a href="#tab3" data-toggle="tab">Objective</a></li>
+			    			<li><a href="#tab4" data-toggle="tab">Perform</a></li>
+			    			<li><a href="#tab5" data-toggle="tab">Quiz</a></li>
+			    			<li><a href="#tab6" data-toggle="tab">Referrence</a></li>
+			    		</ul>
+			    		<div class="tab-content">
+			    			<div class="tab-pane active" id="tab1">
+			    				<p>In this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth witIn this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth with periodic motion..</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab2">
+			    				<p>Howdy, I'm in Section 2.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab3">
+			    				<p>Howdy, I'm in Section 3.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab4">
+			    				<p>Howdy, I'm in Section 4.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab5">
+			    				<p>Howdy, I'm in Section 5.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab6">
+			    				<p>Howdy, I'm in Section 6.</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>         
+			    <div class="tab-pane" id="lJ">
+
+			    	<h4>Hierarchial Transformations : 3D articulated arm</h4>
+			    	<div class="tabbable"> <!-- Only required for left/right tabs -->
+			    		<ul class="nav nav-tabs">
+			    			<li class="active"><a href="#tab1" data-toggle="tab">Introduction</a></li>
+			    			<li><a href="#tab2" data-toggle="tab">Theory</a></li>
+			    			<li><a href="#tab3" data-toggle="tab">Objective</a></li>
+			    			<li><a href="#tab4" data-toggle="tab">Perform</a></li>
+			    			<li><a href="#tab5" data-toggle="tab">Quiz</a></li>
+			    			<li><a href="#tab6" data-toggle="tab">Referrence</a></li>
+			    		</ul>
+			    		<div class="tab-content">
+			    			<div class="tab-pane active" id="tab1">
+			    				<p>In this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth witIn this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth with periodic motion..</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab2">
+			    				<p>Howdy, I'm in Section 2.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab3">
+			    				<p>Howdy, I'm in Section 3.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab4">
+			    				<p>Howdy, I'm in Section 4.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab5">
+			    				<p>Howdy, I'm in Section 5.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab6">
+			    				<p>Howdy, I'm in Section 6.</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>         
+			    <div class="tab-pane" id="lK">
+
+			    	<h4>Projection and cameras</h4>
+			    	<div class="tabbable"> <!-- Only required for left/right tabs -->
+			    		<ul class="nav nav-tabs">
+			    			<li class="active"><a href="#tab1" data-toggle="tab">Introduction</a></li>
+			    			<li><a href="#tab2" data-toggle="tab">Theory</a></li>
+			    			<li><a href="#tab3" data-toggle="tab">Objective</a></li>
+			    			<li><a href="#tab4" data-toggle="tab">Perform</a></li>
+			    			<li><a href="#tab5" data-toggle="tab">Quiz</a></li>
+			    			<li><a href="#tab6" data-toggle="tab">Referrence</a></li>
+			    		</ul>
+			    		<div class="tab-content">
+			    			<div class="tab-pane active" id="tab1">
+			    				<p>In this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth witIn this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth with periodic motion..</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab2">
+			    				<p>Howdy, I'm in Section 2.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab3">
+			    				<p>Howdy, I'm in Section 3.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab4">
+			    				<p>Howdy, I'm in Section 4.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab5">
+			    				<p>Howdy, I'm in Section 5.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab6">
+			    				<p>Howdy, I'm in Section 6.</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>         
+	    </div>
+    </div>
+<div id="push"></div>
+	</div>
+
+   		
+	 
+	    <div id="footer" align="center">
+        <div class="container-fluid">
+      	
+        <p class="muted credit">Some rights reserved <a href="http://vlab.co.in">vlab.co.in</a> and <a href="#">D</a>.</p>
+
+      </div>
+      </div>
+
+</footer>
+	 <script src="http://code.jquery.com/jquery-1.9.0.min.js"> </script>
+	 <script src="js/bootstrap.js"> </script>
+
+	 </body>
+</html>

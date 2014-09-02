@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta charsetr="etf-8">
+	 <title>Virtual Labs</title>
+	 <link rel="stylesheet" href="../css/bootstrap.css">
+	 <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+	 <link rel="stylesheet" href="../css/override-style.css">
+	 <link href="http://fonts.googleapis.com/css?family=Oleo+Script:400" rel="stylesheet" type="text/css">
+	 <script src="jquery-2.0.1.min.js"></script> 
+	 <script src="../js/bootstrap.min.js"></script>  
+	 <script src="../js/bootstrap-modal.js"></script>
+	 <script src="../js/bootstrap-modalmanager.js"></script>  
+
+	<style type="text/css">
+		.well { background: #fff; text-align: center; }
+		.modal { text-align: left; }
+body{
+	background-image: url('http://0.tqn.com/d/chemistry/1/0/N/n/experimentgirl.jpg');
+}
+	</style>  
+
+
+ </head>
+ <body>
+
+ <div id="wrap">
+ <div class="navbar navbar-fixed-top">
+ <div class="navbar-inner">
+ <div class="container">
+ <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ </button>
+ <a href="index.html" class="brand">Virtual Labs</a>
+ <div class="nav-collapse collapse">
+ <ul class="nav">
+ <li> <a href="index.html">Home</a> </li>
+
+ <li> <a href="about.html">About</a> </li>
+
+ <li class="dropdown">
+ <a href="#" class="dropdown-toggle" data-toggle="dropdown">Labs<b class="caret"></b></a>
+ <ul class="dropdown-menu">
+ <li><a href="courses.html?vlab=lA">Computer Science</a></li>
+ <li><a href="courses.html?vlab=lB">Electronics Engineering</a></li>
+ <li><a href="courses.html?vlab=lC">Civil Engineering</a></li>
+ <li><a href="courses.html?vlab=lD">Chemical Engineering</a></li>
+ <li><a href="courses.html?vlab=lE">Electrical Engineering</a></li>
+ <li><a href="courses.html?vlab=lH">Physical Sciences</a></li>
+ <li><a href="courses.html?vlab=lI">Mechanical Engineering</a></li>
+ <li><a href="courses.html?vlab=lJ">Chemical Sciences</a></li>
+ </ul>
+ </li>
+
+ <li class="dropdown">
+ <a href="#" class="dropdown-toggle" data-toggle="dropdown">Participating Institutes<b class="caret"></b></a>
+ <ul class="dropdown-menu">
+ <li><a href="http://iitd.ac.in">IIT Delhi</a></li>
+ <li><a href="http://iitb.ac.in">IIT Bombay</a></li>
+ <li><a href="http://iitk.ac.in">IIT Kanpur</a></li>
+ <li><a href="http://iiit.ac.in">IIIT Hyderabad</a></li>
+ <li><a href="http://iitg.ac.in">IIT Guwahati</a></li>
+ <li><a href="http://iitr.ac.in">IIT Roorkee</a></li>
+ <li><a href="http://iitm.ac.in">IIT Madras</a></li>
+ <li><a href="http://iitkgp.ac.in">IIT Kharagpur</a></li>
+ <li><a href="http://www.coep.org.in/">COE Pune</a></li>
+ <li><a href="http://dayalbagh.org.in">Dayalbagh University</a></li>
+ <li><a href="http://nitk.ac.in">NIT Suratkal</a></li>
+ <li><a href="http://amrita.edu/">Amrita University</a></li>
+ </ul>
+ </li>
+
+
+ <li><a href="#form-content" role="button" data-toggle="modal">Contact</a></li>
+ <div id="form-content" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" keyboard:"true" backdrop:"true">
+ <div class="modal-header">
+ <a class="close" data-dismiss="modal">x</a>
+ <h3>Send me a message</h3>
+ </div>
+ <div class="modal-body">
+ <form class="contact" name="contact">
+ <label class="label" for="name">Your Name</label><br>
+ <input type="text" name="name" class="input-xlarge"><br>
+ <label class="label" for="email">Your E-mail</label><br>
+ <input type="email" name="email" class="input-xlarge"><br>
+ <label class="label" for="message">Enter a Message</label><br>
+ <textarea name="message" class="input-xlarge"></textarea>
+ </form>
+ </div>
+ <div class="modal-footer">
+ <input class="btn btn-success" type="submit" value="Send" id="submit">
+ <a href="#" class="btn" data-dismiss="modal">Close</a>
+ </div>
+ </div>
+
+ <li><a href="#signin" role="button" data-toggle="modal">LogIn</a></li>
+ <div id="signin" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" keyboard:"true" backdrop:"true">
+ <div class="modal-header">
+ <a class="close" data-dismiss="modal">x</a>
+ <h3>Login</h3>
+ </div>
+ <div class="modal-body">
+ <form class="contact" name="contact">
+ <label class="label" for="name">User Name or Email</label><br>
+ <input type="text" name="name" class="input-xlarge"><br>
+ <label class="label" for="message">Password</label><br>
+ <input type="password" name="password" class="input-xlarge"></input>
+ <label class="checkbox">
+ <input type="checkbox">Remember Password
+ </label>
+ </form>
+ <p><a href="form.html">Click here to Register</a>
+ </div>
+ <div class="modal-footer">
+ <input class="btn btn-success" type="submit" value="Sign In" id="submit">
+ </div>
+ </div>
+
+
+ </ul><!-- div class="nav" ends here-->
+ </div><!-- div class="nav-collapse collapse" ends here -->
+ </div><!-- div class=container ends here -->
+ </div>  <!-- div class=navbar-inner ends here -->
+ </div> <!-- div class="navbar navbar-fixed-top" ends here -->
+
+    	<!-- Navbar ================================================== -->    
+		<div class="hero-unit">
+			<div class="container" style="padding-right:24%;"> 
+				             <h1>Perform experiments</h1>
+				  			 <h1>from anywhere, for free</h1>
+				  			 <p>Virtual Labs takes you on a journey of online labs</p>
+				  			 <p> <a href="courses.html?vlab=lA" class="btn btn-primary btn-large"><i class="icon-th-large icon-white"></i>    All Labs</a>  </p>
+		    </div>
+		</div><!-- div class=hero-unit ends here -->
+	<!-- CSS3 Buttons
+    ================================================== -->
+<!--		<div class="container-fluid" align="center">
+		    <div class="row-fluid">
+			                <ul id="menu-css">  
+						        <li><a href="#">Computer Science</a></li>  
+						        <li><a href="#">Electrical Engineering</a></li>  
+						        <li><a href="#">Electronics Engineering</a></li>  
+						        <li><a href="#">Civil Engineering</a></li>  
+						    </ul>
+			    			<ul id="menu-css">  
+			    			    <li><a href="#">Chemical Sciences</a></li>  
+						        <li><a href="#">Industrial Production Engineering</a></li>  
+						        <li><a href="#">Mechanical Engineering</a></li>  
+						        <li><a href="#">Physics</a></li>  
+						    </ul>
+		    </div>    
+		</div>  -->
+    </div> 
+    <bs/br>
+	<div id="push"></div><br/><br/>
+ <!-- =====================================================================
+	==========================div id="WRAP" ends here======================= -->
+    <!-- Footer
+    ================================================== -->
+    
+    <!-- Footer
+    ================================================== -->
+    <div id="footer">
+    <div class="container" style="width:65%">
+    <div class="row">
+    <div class="span3">
+    Follow us on
+    <a href="http://www.facebook.com">Facebook</a>,
+    <a href="https://twitter.com">Twitter</a>, and
+    <a href="https://plus.google.com">Google+</a><br>
+    
+    <div id="pi">
+        <marquee direction="left" scrolldelay="0">
+        <img Title="IIT Bombay" src="../img/pi/ib.jpg"/>
+        <img Title="Dayalbagh" src="../img/pi/dei.jpg"/>
+        <img Title="IIIT-Hyd" src="../img/pi/iiit.jpg"/>
+        <img Title="Amrita University" src="../img/pi/au.jpg"/>
+        <img Title="IIT Delhi" src="../img/pi/id.gif"/>
+        <img Title="IIT Guwahati" src="../img/pi/ig.png"/>
+        <img Title="IIT Kanpur" src="../img/pi/ika.png"/>
+        <img Title="IIt Kharagpur" src="../img/pi/ikh.gif"/>
+        <img Title="IIT Madras" src="../img/pi/im.gif"/>
+        <img Title="IIT Roorkee" src="../img/pi/ir.gif"/>
+        <img Title="NIT Surathkal" src="../img/pi/nk.jpg"/>
+        <img Title="COE Pune" src="../img/pi/pune.jpg"/>
+    </marquee>
+    </div>
+
+    </div>
+    <div class="span2a">
+
+    <h6 class="footer-h">Information</h6>
+    <a href="/how-it-works" id="how-it-works-footer-link">How It Works</a>
+    <br>
+    <a href="/faq">Help and FAQs</a>
+    <br>
+    <a href="/feedback/signup">Feedback</a>
+
+    </div>
+    <div class="span2a">
+
+    <h6 class="footer-h">Community</h6>
+    <a href="#">Blog</a>
+    <br>
+    <a href="#">Meetups</a>
+    <br>
+    <a href="#">News &amp; Media</a>
+
+    </div>
+    <div class="span2a">
+
+    <h6 class="footer-h">Virtual Labs</h6>
+    <a href="/us">About</a>
+    <br>
+    <a href="/jobs">Jobs</a>
+    <br>
+    <a href="/contact">Contact Us</a>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <!-- Scripts before body ends
+    ================================================== -->
+	<script src="http://code.jquery.com/jquery-1.9.0.min.js"> </script>
+	<script src="js/bootstrap.js"> </script>
+ </body>
+     <!-- Body Ends here
+    ================================================== -->	
+</html>

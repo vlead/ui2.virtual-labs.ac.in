@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta charsetr="etf-8">
+	 <title>Virtual Labs</title>
+	 <link rel="stylesheet" href="css/bootstrap.css">
+	 <link rel="stylesheet" href="css/bootstrap-responsive.css">
+	 <script src="jquery-2.0.1.min.js"></script> 
+	 <script src="js/bootstrap.min.js"></script>  
+	 <script src="js/bootstrap-modal.js"></script>
+	 <script src="js/bootstrap-modalmanager.js"></script>  
+
+	<style type="text/css">
+		.well { background: #fff; text-align: center; }
+		.modal { text-align: left; }
+	</style>  
+
+
+ </head>
+ <body>
+    <div id="wrap">
+    	<!-- Navbar ================================================== -->    
+	    <div class="navbar navbar-fixed-top"> 
+			<div class="navbar-inner">
+			 	<div class="container">
+			 	  	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+		            </button>	
+			 	   <a href="#" class="brand"> Virtual Labs</a>
+			 	    <div class="nav-collapse collapse">
+			 	    	<ul class="nav">
+			 	    	 <li> <a href="index.html">Home</a> </li>
+					 	    	<li class="dropdown">
+				                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Labs <b class="caret"></b></a>
+					                <ul class="dropdown-menu">
+						                  <li><a href="#">Computers</a></li>
+						                  <li><a href="#">Civil</a></li>
+						                  <li><a href="#">Electrical</a></li>
+						                  <li class="divider"></li>
+						                  <li class="nav-header">Computers</li>
+						                  <li><a href="#">Data Structures</a></li>
+						                  <li><a href="#">Algorithms</a></li>
+					                </ul>
+				                </li>
+			 	    	 		<li class="dropdown">
+				                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+					                <ul class="dropdown-menu">
+						                  <li><a href="#">History</a></li>
+						                  <li><a href="#">Achievements</a></li>
+						                  <li><a href="#">Constituent Team</a></li>
+						                  <li class="divider"></li>
+						                  <li class="nav-header">Important Members</li>
+						                  <li><a href="#">IIT-B</a></li>
+						                  <li><a href="#">IIIT-H</a></li>
+					                </ul>
+				                </li>
+						<li><a href="#form-content" role="button" data-toggle="modal">Contact</a></li>
+						<div id="form-content" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" keyboard:"true" backdrop:"true">
+							<div class="modal-header">
+								<a class="close" data-dismiss="modal">×</a>
+								<h3>Send me a message</h3>
+							</div>
+							<div class="modal-body">
+								<form class="contact" name="contact">
+									<label class="label" for="name">Your Name</label><br>
+									<input type="text" name="name" class="input-xlarge"><br>
+									<label class="label" for="email">Your E-mail</label><br>
+									<input type="email" name="email" class="input-xlarge"><br>
+									<label class="label" for="message">Enter a Message</label><br>
+									<textarea name="message" class="input-xlarge"></textarea>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<input class="btn btn-success" type="submit" value="Send!" id="submit">
+								<a href="#" class="btn" data-dismiss="modal">Nah.</a>
+							</div>
+						</div> 
+			 	    	 <li> <a href="form.html">Register</a> </li>
+			 	    	</ul>    <!-- div class="nav" ends here-->
+			 	    </div><!-- div class="nav-collapse collapse" ends here -->
+			    </div><!-- div class=container ends here -->
+			</div>	<!-- div class=navbar-inner ends here -->
+		</div> <!-- div class="navbar navbar-fixed-top" ends here -->
+    <!-- Hero-Unit
+    ================================================== -->
+		<div class="hero-unit">
+			<div class="container"> 
+				             <h1>Perform experiments</h1>
+				  			 <h1>from anywhere, for free</h1>
+				  			 <p>Virtual Labs takes you on a journey of online labs</p>
+				  			 <p> <a href="courses.html" class="btn btn-primary btn-large"><i class="icon-th-large icon-white"></i>    All Labs</a>  </p>
+		    </div>
+		</div><!-- div class=hero-unit ends here -->
+	<!-- CSS3 Buttons
+    ================================================== -->
+<!--		<div class="container-fluid" align="center">
+		    <div class="row-fluid">
+			                <ul id="menu-css">  
+						        <li><a href="#">Computer Science</a></li>  
+						        <li><a href="#">Electrical Engineering</a></li>  
+						        <li><a href="#">Electronics Engineering</a></li>  
+						        <li><a href="#">Civil Engineering</a></li>  
+						    </ul>
+			    			<ul id="menu-css">  
+			    			    <li><a href="#">Chemical Sciences</a></li>  
+						        <li><a href="#">Industrial Production Engineering</a></li>  
+						        <li><a href="#">Mechanical Engineering</a></li>  
+						        <li><a href="#">Physics</a></li>  
+						    </ul>
+		    </div>    
+		</div>  -->
+    </div> 
+ <!-- =====================================================================
+	==========================div id="WRAP" ends here======================= -->
+	<div id="push"></div>
+    <!-- Footer
+    ================================================== -->
+    <div id="footer">
+    	<div class="container">
+      		<p class="muted credit">Some rights reserved <a href="http://vlab.co.in">vlab.co.in</a> and <a href="#">D</a>.</p>
+    	</div>
+    </div>
+    <!-- Scripts before body ends
+    ================================================== -->
+	<script src="http://code.jquery.com/jquery-1.9.0.min.js"> </script>
+	<script src="js/bootstrap.js"> </script>
+ </body>
+     <!-- Body Ends here
+    ================================================== -->	
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta charsetr="etf-8">
+	 <title>Virtual Labs</title>
+	 <link rel="stylesheet" href="../css/bootstrap.css">
+	 <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	 <script src="../bootstrap.min.js"></script>
+	 <script src="../bootstrap-modal.js"></script>
+	 <script src="../bootstrap-modalmanager.js"></script>
+
+<!--	 <style type="text/css">
+	 .well { background: #fff; text-align: center; }
+	 .modal { text-align: left; }
+	 </style>  -->
+
+	</head>
+
+	<body>
+	
+	<div id="wrap">
+
+	 <div class="navbar navbar-fixed-top"> 
+	 	 <div class="navbar-inner">
+	 	  <div class="container">
+	 	  	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>	
+	 	   <a href="../all_files/index.html" class="brand"> Virtual Labs</a>
+	 	    <div class="nav-collapse collapse">
+	 	    	<ul class="nav">
+	 	    	 <li> <a href="../all_files/index.html">Home</a> </li>
+			 	    	 <li class="dropdown">
+		                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Labs <b class="caret"></b></a>
+			                <ul class="dropdown-menu">
+				                  <li><a href="#">Computers</a></li>
+				                  <li><a href="#">Civil</a></li>
+				                  <li><a href="#">Electrical</a></li>
+				                  <li class="divider"></li>
+				                  <li class="nav-header">Computers</li>
+				                  <li><a href="#">Data Structures</a></li>
+				                  <li><a href="#">Algorithms</a></li>
+			                </ul>
+		                </li>
+	 	    	 		<li class="dropdown">
+		                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+			                <ul class="dropdown-menu">
+				                  <li><a href="#">History</a></li>
+				                  <li><a href="#">Achievements</a></li>
+				                  <li><a href="#">Constituent Team</a></li>
+				                  <li class="divider"></li>
+				                  <li class="nav-header">Important Members</li>
+				                  <li><a href="#">IIT-B</a></li>
+				                  <li><a href="#">IIIT-H</a></li>
+			                </ul>
+		                </li>
+				<li><a href="#form-content" role="button" data-toggle="modal">Contact</a></li>
+				<div id="form-content" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" keyboard:"true" backdrop:"true">
+				<div class="modal-header">
+				<a class="close" data-dismiss="modal">×</a>
+				<h3>Send me a message</h3>
+				</div>
+				<div class="modal-body">
+				<form class="contact" name="contact">
+				<label class="label" for="name">Your Name</label><br>
+				<input type="text" name="name" class="input-xlarge"><br>
+				<label class="label" for="email">Your E-mail</label><br>
+				<input type="email" name="email" class="input-xlarge"><br>
+				<label class="label" for="message">Enter a Message</label><br>
+				<textarea name="message" class="input-xlarge"></textarea>
+				</form>
+				</div>
+				<div class="modal-footer">
+				<input class="btn btn-success" type="submit" value="Send!" id="submit">
+				<a href="#" class="btn" data-dismiss="modal">Nah.</a>
+				</div>
+				</div>
+
+
+
+	 	    	</ul>
+                </form>
+	 	    </div>
+	 	  </div>
+	 	 </div>	
+	 </div>
+
+	 
+	</div>
+
+ <div class="container-fluid">
+ 	<div class="row-fluid">
+ 	<div class="span4">
+ 	<ul class="breadcrumb">
+	  <li><a href="#">Home</a> <span class="divider">/</span></li>
+	  <li><a href="#">Labs</a> <span class="divider">/</span></li>
+	  <li class="active">Data</li>
+    </ul>	</div> </div> </div>
+
+   	<div id="push">
+   	</div>
+
+   	<div class"container-fluid">
+   	   	<div class="tabbable tabs-left">
+	 			<ul class="nav nav-tabs">
+	                <li class="active"><a href="#lA" data-toggle="tab">Pulse Heating of Materials</a></li>
+	                <li class=""><a href="#lB" data-toggle="tab">Erosion Mechanism Lazarenka's model</a></li>
+	                <li class=""><a href="#lC" data-toggle="tab">Thermal Models of EDM</a></li>
+	                <li class=""><a href="#lD" data-toggle="tab">Laser hardening using NdYAG laser system</a></li>
+	                <li class=""><a href="#lE" data-toggle="tab">Electrochemical Machining</a></li>
+	            </ul>
+			<div class="tab-content">
+			    
+			    <div class="tab-pane active" id="lA">
+
+			    	<h4>Pulse Heating of Materials</h4>
+			    	<div class="tabbable"> <!-- Only required for left/right tabs -->
+			    		<ul class="nav nav-tabs">
+			    			<li class="active"><a href="#tab1" data-toggle="tab">Introduction</a></li>
+			    			<li class=""><a href="#tab2" data-toggle="tab">Theory</a></li>
+			    			<li class=""><a href="#tab3" data-toggle="tab">Objective</a></li>
+			    			<li class=""><a href="#tab4" data-toggle="tab">Perform</a></li>
+			    			<li class=""><a href="#tab5" data-toggle="tab">Quiz</a></li>
+			    			<li class=""><a href="#tab6" data-toggle="tab">Referrence</a></li>
+			    		</ul>
+			    		<div class="tab-content">
+			    			<div class="tab-pane active" id="tab1">
+			    				<p>In this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth witIn this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth with periodic motion..</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab2">
+			    				<p>Howdy, I'm in Section 2.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab3">
+			    				<p>Howdy, I'm in Section 3.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab4">
+			    				<p>Howdy, I'm in Section 4.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab5">
+			    				<p>Howdy, I'm in Section 5.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tab6">
+			    				<p>Howdy, I'm in Section 6.</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>         
+			    <div class="tab-pane" id="lB">
+
+			    	<h4>Erosion Mechanism Lazarenka's model</h4>
+			    	<div class="tabbable"> <!-- Only required for left/right tabs -->
+			    		<ul class="nav nav-tabs">
+			    			<li class="active"><a href="#ta1" data-toggle="tab">Introduction</a></li>
+			    			<li class=""><a href="#ta2" data-toggle="tab">Theory</a></li>
+			    			<li class=""><a href="#ta3" data-toggle="tab">Objective</a></li>
+			    			<li class=""><a href="#ta4" data-toggle="tab">Perform</a></li>
+			    			<li class=""><a href="#ta5" data-toggle="tab">Quiz</a></li>
+			    			<li class=""><a href="#ta6" data-toggle="tab">Referrence</a></li>
+			    		</ul>
+			    		<div class="tab-content">
+			    			<div class="tab-pane active" id="ta1">
+						<p>
+						What is mapping?
+
+						 
+
+						In robotic terminology mapping is the process by which a robot moves around its environment, scans it with its sensors and makes representations of the environment. These representations of the environment made by the robot is called the map.
+
+						What are the forms of representing a map?
+
+						With range sensors the following representations are possible
+
+						a) Raw map of sensor readings: This is a map obtained by simply plotting the range measurements obtained by the sensor with reference to a reference frame. Such a map looks like this
+						</p>
+						<p><img src="../img/rawmap.jpg"></img></p>
+						<p>b) A grid based map: In a grid based representation each cell in the grid is marked as occupied or unoccupied by an obstacle. Such a representation looks like this.</p>
+						<p><img src="../img/gridmap.jpg"></img></p>
+						<p>c) A feature based map: In this representation the map is shown in terms of geometric primitives such as line segments and corners.</p>
+						<p><img src="../img/featuremap.jpg"></img></p>
+						<p>d) Topological map: A topological map is in general a higher level representation. It shows a network of topological features such as rooms, corridors and intersections. A typical topological map looks as follows.</p>
+						<p><img src="../img/topomap.jpg"></img></p>
+						
+					
+			    			</div>
+			    			<div class="tab-pane" id="ta2">
+			    				<p>Herein we describe the mapping algorithm which integrates multiple readings into the probabilistic framework that models the sensor noise or sensor errors. For the sake of keeping this article simple but conveying what it needs to convey we skip steps in the derivation but essentially convey it from an algorithmic standpoint, a standpoint we hope would enable the reader to immediately code the algorithm.</p>
+							
+							 
+							<p>The Mapping Algorithm:
+							
+							 
+							
+							The mapping algorithm works in the following fashion. The map is divided into a rectangular array of cells and initially all cells have a probability of 0.5, indicating that the cell could be occupied or unoccupied to an equal probability, since in the beginning the robot does not know anything about the environment in which it is. A probability value greater than 0.5 indicates the cell has more chances of being occupied than unoccupied by an obstacle. Similarly a probability of less than 0.5 indicates that the cell has lesser probability of being occupied than unoccupied. In figure1 the initial state of the map is shown with all cells shaded in gray green indicating that the state of the cell is unknown regarding its occupancy or non-occupancy. This corresponds to the probability of 0.5 for each cell. Darker shades of gray green indicate probabilities more than 0.5 or higher occupancy and lighter shades indicate probabilities less than 0.5 or higher non-occupancy.</p>
+							<p>The starting coordinates of the robot are considered to be (0,0) or the origin or any other point (x,y). This and the cells surrounding it which are occupied by the robot are certainly not occupied by an obstacle and hence they have an occupancy probability of 0 and are depicted in light green. The robot then takes a scan of the environment through its sensors. The scan could be composed of one or multiple range readings, for the sake of simplicity in illustration we consider single reading scans. Since the reading is noisy it is modelled through a probability density function as described in the Virtual Lab for sensor models. One such sonar reading and the probability of the cells which come under the influence of this reading is shown in figure 2.</p>
+			    			</div>
+			    			<div class="tab-pane" id="ta3">
+			    				<p>The objective of this virtual lab is to represent the environment of a mobile robot in which it navigates through an occupancy grid map. The environment is discretized into a grid framework composed of cells. As the robot moves around obtaining scans of the environment these scans are mapped into the cells in terms of occupancy or non occupancy values. Repetitive scans of the same location are fused with the previous probability values at those locations through a recursive bayes filter framework.</p>
+			    			</div>
+			    			<div class="tab-pane" id="ta4">
+			    				<p>Howdy, I'm in Section 4.</p>
+			    			</div>
+			    			<div class="tab-pane" id="ta5">
+			    				<p>Howdy, I'm in Section 5.</p>
+			    			</div>
+			    			<div class="tab-pane" id="ta6">
+			    				<p>Howdy, I'm in Section 6.</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>         
+			    <div class="tab-pane" id="lC">
+
+			    	<h4>Thermal Models of EDM</h4>
+			    	<div class="tabbable"> <!-- Only required for left/right tabs -->
+			    		<ul class="nav nav-tabs">
+			    			<li class="active"><a href="#t1" data-toggle="tab">Introduction</a></li>
+			    			<li><a href="#t2" data-toggle="tab">Theory</a></li>
+			    			<li><a href="#t3" data-toggle="tab">Objective</a></li>
+			    			<li><a href="#t4" data-toggle="tab">Perform</a></li>
+			    			<li><a href="#t5" data-toggle="tab">Quiz</a></li>
+			    			<li><a href="#t6" data-toggle="tab">Referrence</a></li>
+			    		</ul>
+			    		<div class="tab-content">
+			    			<div class="tab-pane active" id="t1">
+			    				<p>In this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth witIn this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth with periodic motion..</p>
+			    			</div>
+			    			<div class="tab-pane" id="t2">
+			    				<p>Howdy, I'm in Section 2.</p>
+			    			</div>
+			    			<div class="tab-pane" id="t3">
+			    				<p>Howdy, I'm in Section 3.</p>
+			    			</div>
+			    			<div class="tab-pane" id="t4">
+			    				<p>Howdy, I'm in Section 4.</p>
+			    			</div>
+			    			<div class="tab-pane" id="t5">
+			    				<p>Howdy, I'm in Section 5.</p>
+			    			</div>
+			    			<div class="tab-pane" id="t6">
+			    				<p>Howdy, I'm in Section 6.</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>         
+			    <div class="tab-pane" id="lD">
+
+			    	<h4>Laser hardening using NdYAG laser system</h4>
+			    	<div class="tabbable"> <!-- Only required for left/right tabs -->
+			    		<ul class="nav nav-tabs">
+			    			<li class="active"><a href="#tb1" data-toggle="tab">Introduction</a></li>
+			    			<li><a href="#tb2" data-toggle="tab">Theory</a></li>
+			    			<li><a href="#tb3" data-toggle="tab">Objective</a></li>
+			    			<li><a href="#tb4" data-toggle="tab">Perform</a></li>
+			    			<li><a href="#tb5" data-toggle="tab">Quiz</a></li>
+			    			<li><a href="#tb6" data-toggle="tab">Referrence</a></li>
+			    		</ul>
+			    		<div class="tab-content">
+			    			<div class="tab-pane active" id="tb1">
+			    				<p>In this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth witIn this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth with periodic motion..</p>
+			    			</div>
+			    			<div class="tab-pane" id="tb2">
+			    				<p>Howdy, I'm in Section 2.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tb3">
+			    				<p>Howdy, I'm in Section 3.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tb4">
+			    				<p>Howdy, I'm in Section 4.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tb5">
+			    				<p>Howdy, I'm in Section 5.</p>
+			    			</div>
+			    			<div class="tab-pane" id="tb6">
+			    				<p>Howdy, I'm in Section 6.</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>         
+			    <div class="tab-pane" id="lE">
+
+			    	<h4>Electrochemical Machining</h4>
+			    	<div class="tabbable"> <!-- Only required for left/right tabs -->
+			    		<ul class="nav nav-tabs">
+			    			<li class="active"><a href="#ab1" data-toggle="tab">Introduction</a></li>
+			    			<li><a href="#ab2" data-toggle="tab">Theory</a></li>
+			    			<li><a href="#ab3" data-toggle="tab">Objective</a></li>
+			    			<li><a href="#ab4" data-toggle="tab">Perform</a></li>
+			    			<li><a href="#ab5" data-toggle="tab">Quiz</a></li>
+			    			<li><a href="#ab6" data-toggle="tab">Referrence</a></li>
+			    		</ul>
+			    		<div class="tab-content">
+			    			<div class="tab-pane active" id="ab1">
+			    				<p>In this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth witIn this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement,initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+							
+							 
+							
+							Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and forth with periodic motion..</p>
+			    			</div>
+			    			<div class="tab-pane" id="ab2">
+			    				<p>Howdy, I'm in Section 2.</p>
+			    			</div>
+			    			<div class="tab-pane" id="ab3">
+			    				<p>Howdy, I'm in Section 3.</p>
+			    			</div>
+			    			<div class="tab-pane" id="ab4">
+			    				<p>Howdy, I'm in Section 4.</p>
+			    			</div>
+			    			<div class="tab-pane" id="ab5">
+			    				<p>Howdy, I'm in Section 5.</p>
+			    			</div>
+			    			<div class="tab-pane" id="ab6">
+			    				<p>Howdy, I'm in Section 6.</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>         
+			</div>
+	    </div>
+    </div>
+
+
+   		
+	 
+	    <div id="footer" align="center">
+        <div class="container-fluid">
+      	
+        <p class="muted credit">Some rights reserved <a href="http://vlab.co.in">vlab.co.in</a> and <a href="#">D</a>.</p>
+
+      </div>
+      </div>
+
+</footer>
+	 <script src="http://code.jquery.com/jquery-1.9.0.min.js"> </script>
+	 <script src="js/bootstrap.js"> </script>
+
+	 </body>
+</html>
