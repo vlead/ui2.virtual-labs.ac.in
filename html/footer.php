@@ -1,4 +1,6 @@
-<html>
+	<!-- Footer
+	================================================== -->
+	<html>
  <div id="footer">
     <div class="container" style="width:75%;">
     <div class="row">

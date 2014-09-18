@@ -14,7 +14,7 @@
 	 <script src="js/bootstrap-modalmanager.js"></script> 
 <style type="text/css">
 body{
-background-color: #6699cc;
+
 }
     .input-append button.add-on {
         height: inherit !important;
